@@ -6,4 +6,4 @@ These are the solutions to various Leetcode problems that I’ve solved so far. 
 
 https://leetcode.com/u/Nightmared232323/
 🔗 Leetcode Profile:
-Visit My Leetcode Profile
+[Visit My Leetcode Profile][https://leetcode.com/u/Nightmared232323/]
