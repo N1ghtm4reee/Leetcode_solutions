@@ -24,3 +24,26 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize)
     }
     return NULL;
 }
+
+// back to it hardcore mode
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        std::unordered_map<int, int> map;
+        for (auto i = 0; i < nums.size(); i++)
+        {
+            std::unordered_map<int, int>::iterator it = map.find(target - nums[i]);
+            if (it != map.end())
+            {
+                vector<int> res;
+                res.push_back(it->second);
+                res.push_back(i);
+                return res;
+            }
+            else
+                map[nums[i]] = i;
+        }
+        return vector<int>(0);
+    }
+};
+
